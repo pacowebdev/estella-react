@@ -1,7 +1,5 @@
-# Source Code for the React Firebase project.
+# ESTELLA_React-Firebase
 
 It's using React Router v6 and Firebase v9.
 
-You like it ? Star it !
-# estella-react
-# estella-react
+- Auth Firebase
