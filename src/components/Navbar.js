@@ -3,7 +3,7 @@ import { UserContext } from "../context/UserContext";
 import { Link, useNavigate } from "react-router-dom";
 
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase-config";
+import { auth } from "../utils/firebase-config";
 
 export default function Navbar() {
     const { currentUser, toggleModals } = useContext(UserContext);
