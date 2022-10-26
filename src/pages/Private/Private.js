@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { UserContext } from "../../context/UserContext";
 import { Outlet, Navigate } from "react-router-dom";
 
-export default function Private(props) {
+export default function Private() {
     const { currentUser } = useContext(UserContext);
     // console.log('PRIVATE', currentUser);
 
@@ -11,9 +11,9 @@ export default function Private(props) {
     }
 
     return (
-        <div className='container'>
+        <main className='p-2'>
             <Outlet />
-        </div>
+        </main>
     );
 }
 

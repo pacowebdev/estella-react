@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from 'react';
 import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 
-function SignInModal(props) {
+function SignInModal() {
     const { modalState, signIn, closeModal } = useContext(UserContext);
     const [ validation, setValidation ] = useState('');
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ function SignInModal(props) {
                 inputs.current[1].value
             )
         closeModal();
-        navigate('/private/private-home')
+        navigate('/private/admin')
         } catch (err) {
             console.log(err.code);
             setValidation('email and/or password incorrect');

@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import SignUpModal from "./components/SignUpModal";
 import SignInModal from "./components/SignInModal";
 import Private from "./pages/Private/Private";
-import PrivateHome from "./pages/Private/PrivateHome/PrivateHome";
+import Admin from "./pages/Private/PrivateHome/Admin";
+import './styles/app.css';
 
 function App() {
     return (
@@ -16,7 +17,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />}></Route>
                 <Route path='/private' element={<Private />}>
-                    <Route path={'/private/private-home'} element={<PrivateHome />} />
+                    <Route path={'/private/admin'} element={<Admin />} />
                 </Route>
             </Routes>
         </>
